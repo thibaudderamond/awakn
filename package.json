@@ -1,0 +1,12 @@
+{
+  "name": "awakn",
+  "private": true,
+  "description": "Awakn — POC du companion Ori, prompt système, documents de cadrage et scripts de vérification",
+  "scripts": {
+    "verifier": "node scripts/verifier-restructuration.js awakn-poc/index.html",
+    "eval": "node tests/lancer-eval.js awakn-poc/index.html",
+    "regenerer": "node scripts/regenerer-prompt-integral.js awakn-poc/index.html docs/prompt-ori-integral.md",
+    "graphe": "node scripts/interroger-graphe-cadres.js --stats",
+    "test": "npm run verifier && npm run eval"
+  }
+}
